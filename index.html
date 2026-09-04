@@ -3,10 +3,231 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Coffee, Cats & Thoughts</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f2e9;
+      color: #332b27;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 70px 20px 35px;
+    }
+
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #8a7566;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 72px);
+      font-weight: normal;
+      line-height: 1.1;
+    }
+
+    .tagline {
+      max-width: 620px;
+      margin: 20px auto 0;
+      color: #75675e;
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    nav {
+      border-top: 1px solid #d9cfc3;
+      border-bottom: 1px solid #d9cfc3;
+      text-align: center;
+      padding: 15px 20px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    nav a {
+      color: #51463f;
+      text-decoration: none;
+      margin: 0 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      width: min(900px, calc(100% - 40px));
+      margin: 65px auto;
+    }
+
+    .section-label {
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 11px;
+      color: #967d6b;
+      margin-bottom: 10px;
+    }
+
+    .featured {
+      padding-bottom: 55px;
+      border-bottom: 1px solid #d9cfc3;
+    }
+
+    .featured h2 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: normal;
+      line-height: 1.2;
+      margin: 5px 0 15px;
+    }
+
+    .meta {
+      font-family: Arial, sans-serif;
+      color: #927e70;
+      font-size: 12px;
+      margin-bottom: 22px;
+    }
+
+    .excerpt {
+      max-width: 720px;
+      font-size: 18px;
+      color: #514740;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      color: #6c5547;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .recent {
+      padding-top: 50px;
+    }
+
+    .recent h2 {
+      font-size: 28px;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+
+    .post {
+      padding: 25px 0;
+      border-top: 1px solid #ddd3c8;
+    }
+
+    .post h3 {
+      font-size: 24px;
+      font-weight: normal;
+      margin: 5px 0 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 45px 20px;
+      border-top: 1px solid #d9cfc3;
+      color: #8a796d;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding-top: 50px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      main {
+        margin-top: 45px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Coffee, Cats & Thoughts</h1>
-  <p>Life, memories, motherhood, cats, and the thoughts that happen somewhere between coffee and everything else.</p>
+
+  <header>
+    <div class="eyebrow">A personal journal</div>
+
+    <h1>Coffee, Cats<br>& Thoughts</h1>
+
+    <p class="tagline">
+      Life happens. I overthink it. Usually with coffee and a cat nearby.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Thoughts</a>
+    <a href="#">Cats</a>
+    <a href="#">Motherhood</a>
+    <a href="#">Life</a>
+    <a href="#">About</a>
+  </nav>
+
+  <main>
+
+    <section class="featured">
+      <div class="section-label">Latest Thought</div>
+
+      <h2>Somewhere Along the Way, I Started Caring</h2>
+
+      <div class="meta">FROM THE JOURNAL</div>
+
+      <p class="excerpt">
+        Some thoughts arrive loudly. Others quietly settle somewhere
+        between ordinary days, memories, conversations, and the things
+        we never expected to care about quite so much.
+      </p>
+
+      <a class="read-more" href="#">Continue reading →</a>
+    </section>
+
+    <section class="recent">
+      <div class="section-label">From the Journal</div>
+      <h2>Recent thoughts</h2>
+
+      <article class="post">
+        <div class="meta">LIFE & THOUGHTS</div>
+        <h3>The Things We Don't Remember</h3>
+      </article>
+
+      <article class="post">
+        <div class="meta">CATS</div>
+        <h3>For the Cats Who Somehow Become Family</h3>
+      </article>
+
+      <article class="post">
+        <div class="meta">MOTHERHOOD</div>
+        <h3>Somewhere Between Mom and Bruh</h3>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Coffee, Cats & Thoughts · Written somewhere between coffee and everything else.
+  </footer>
+
 </body>
 </html>
