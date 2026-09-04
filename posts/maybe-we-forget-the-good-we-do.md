@@ -1,4 +1,6 @@
 ---
+layout: post.njk
+permalink: "/posts/{{ slug }}/"
 title: "Maybe We Forget the Good We Do"
 date: 2026-08-31
 category: Thoughts
