@@ -186,42 +186,47 @@
 
   <main>
 
-    <section class="featured">
-      <div class="section-label">Latest Thought</div>
+   {% set latest = collections.posts[0] %}
 
-      <h2>Somewhere Along the Way, I Started Caring</h2>
+<section class="featured">
+  <div class="section-label">Latest Thought</div>
 
-      <div class="meta">FROM THE JOURNAL</div>
+  <h2>
+    <a href="{{ latest.url }}" style="color: inherit; text-decoration: none;">
+      {{ latest.data.title }}
+    </a>
+  </h2>
 
-      <p class="excerpt">
-        Some thoughts arrive loudly. Others quietly settle somewhere
-        between ordinary days, memories, conversations, and the things
-        we never expected to care about quite so much.
-      </p>
+  <div class="meta">
+    {{ latest.data.category }} · {{ latest.date | readableDate }}
+  </div>
 
-      <a class="read-more" href="#">Continue reading →</a>
-    </section>
+  <p class="excerpt">
+    {{ latest.templateContent | striptags | truncate(220) }}
+  </p>
 
-    <section class="recent">
-      <div class="section-label">From the Journal</div>
-      <h2>Recent thoughts</h2>
+  <a class="read-more" href="{{ latest.url }}">Continue reading →</a>
+</section>
 
-      <article class="post">
-        <div class="meta">LIFE & THOUGHTS</div>
-        <h3>The Things We Don't Remember</h3>
-      </article>
+<section class="recent">
+  <div class="section-label">From the Journal</div>
+  <h2>Recent thoughts</h2>
 
-      <article class="post">
-        <div class="meta">CATS</div>
-        <h3>For the Cats Who Somehow Become Family</h3>
-      </article>
+  {% for post in collections.posts | slice(1, 6) %}
+  <article class="post">
+    <div class="meta">
+      {{ post.data.category }} · {{ post.date | readableDate }}
+    </div>
 
-      <article class="post">
-        <div class="meta">MOTHERHOOD</div>
-        <h3>Somewhere Between Mom and Bruh</h3>
-      </article>
+    <h3>
+      <a href="{{ post.url }}" style="color: inherit; text-decoration: none;">
+        {{ post.data.title }}
+      </a>
+    </h3>
+  </article>
+  {% endfor %}
 
-    </section>
+</section>
 
   </main>
 
