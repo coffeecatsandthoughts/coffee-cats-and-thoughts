@@ -1,8 +1,5 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addCollection("posts", function(collectionApi) {
-  return collectionApi.getFilteredByGlob("posts/*.md").reverse();
-});
 
   eleventyConfig.addFilter("readableDate", function(date) {
     return new Intl.DateTimeFormat("en-US", {
@@ -15,7 +12,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("blogPosts", function(collectionApi) {
     return collectionApi
-      .getFilteredByGlob("./posts/*.md")
+      .getFilteredByGlob(["./posts/*.md", "./*.md"])
+      .filter(item => item.data.layout === "post.njk")
       .sort((a, b) => b.date - a.date);
   });
 
