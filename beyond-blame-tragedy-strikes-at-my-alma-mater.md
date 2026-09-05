@@ -3,7 +3,7 @@ layout: post.njk
 permalink: "/posts/beyond-blame-tragedy-strikes-at-my-alma-mater/"
 title: "Beyond Blame: Tragedy Strikes at My Alma Mater"
 date: 2023-10-25
-category: Motherhood
+category: Thoughts
 slug: beyond-blame-tragedy-strikes-at-my-alma-mater
 ---
 <!-- wp:paragraph -->
