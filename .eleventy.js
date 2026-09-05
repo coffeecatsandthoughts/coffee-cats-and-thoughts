@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
-
+  eleventyConfig.addPassthroughCopy("images");
+  
   eleventyConfig.addFilter("readableDate", function(date) {
     return new Intl.DateTimeFormat("en-US", {
       month: "long",
