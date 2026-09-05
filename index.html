@@ -212,7 +212,8 @@
   <div class="section-label">From the Journal</div>
   <h2>Recent thoughts</h2>
 
-  {% for post in collections.posts | slice(1, 6) %}
+ {% for post in collections.posts %}
+{% if loop.index0 > 0 and loop.index0 < 6 %}
   <article class="post">
     <div class="meta">
       {{ post.data.category }} · {{ post.date | readableDate }}
@@ -224,6 +225,7 @@
       </a>
     </h3>
   </article>
+  {% endif %}
   {% endfor %}
 
 </section>
