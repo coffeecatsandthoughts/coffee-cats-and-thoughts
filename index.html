@@ -212,21 +212,70 @@
   <div class="section-label">From the Journal</div>
   <h2>Recent thoughts</h2>
 
- {% for post in collections.blogPosts %}
-{% if loop.index0 > 0 and loop.index0 < 6 %}
-  <article class="post">
-    <div class="meta">
-      {{ post.data.category }} · {{ post.date | readableDate }}
-    </div>
+{% if collections.blogPosts[1] %}
+<article class="post">
+  <div class="meta">
+    {{ collections.blogPosts[1].data.category }} · {{ collections.blogPosts[1].date | readableDate }}
+  </div>
+  <h3>
+    <a href="{{ collections.blogPosts[1].url }}" style="color: inherit; text-decoration: none;">
+      {{ collections.blogPosts[1].data.title }}
+    </a>
+  </h3>
+</article>
+{% endif %}
 
-    <h3>
-      <a href="{{ post.url }}" style="color: inherit; text-decoration: none;">
-        {{ post.data.title }}
-      </a>
-    </h3>
-  </article>
-  {% endif %}
-  {% endfor %}
+{% if collections.blogPosts[2] %}
+<article class="post">
+  <div class="meta">
+    {{ collections.blogPosts[2].data.category }} · {{ collections.blogPosts[2].date | readableDate }}
+  </div>
+  <h3>
+    <a href="{{ collections.blogPosts[2].url }}" style="color: inherit; text-decoration: none;">
+      {{ collections.blogPosts[2].data.title }}
+    </a>
+  </h3>
+</article>
+{% endif %}
+
+{% if collections.blogPosts[3] %}
+<article class="post">
+  <div class="meta">
+    {{ collections.blogPosts[3].data.category }} · {{ collections.blogPosts[3].date | readableDate }}
+  </div>
+  <h3>
+    <a href="{{ collections.blogPosts[3].url }}" style="color: inherit; text-decoration: none;">
+      {{ collections.blogPosts[3].data.title }}
+    </a>
+  </h3>
+</article>
+{% endif %}
+
+{% if collections.blogPosts[4] %}
+<article class="post">
+  <div class="meta">
+    {{ collections.blogPosts[4].data.category }} · {{ collections.blogPosts[4].date | readableDate }}
+  </div>
+  <h3>
+    <a href="{{ collections.blogPosts[4].url }}" style="color: inherit; text-decoration: none;">
+      {{ collections.blogPosts[4].data.title }}
+    </a>
+  </h3>
+</article>
+{% endif %}
+
+{% if collections.blogPosts[5] %}
+<article class="post">
+  <div class="meta">
+    {{ collections.blogPosts[5].data.category }} · {{ collections.blogPosts[5].date | readableDate }}
+  </div>
+  <h3>
+    <a href="{{ collections.blogPosts[5].url }}" style="color: inherit; text-decoration: none;">
+      {{ collections.blogPosts[5].data.title }}
+    </a>
+  </h3>
+</article>
+{% endif %}
 
 </section>
 
