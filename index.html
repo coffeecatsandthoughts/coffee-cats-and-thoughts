@@ -186,7 +186,7 @@
 
   <main>
 
-   {% set latest = collections.posts[0] %}
+  {% set latest = collections.blogPosts[0] %}
 
 <section class="featured">
   <div class="section-label">Latest Thought</div>
@@ -212,7 +212,7 @@
   <div class="section-label">From the Journal</div>
   <h2>Recent thoughts</h2>
 
- {% for post in collections.posts %}
+ {% for post in collections.blogPosts %}
 {% if loop.index0 > 0 and loop.index0 < 6 %}
   <article class="post">
     <div class="meta">
