@@ -3,7 +3,7 @@ layout: post.njk
 permalink: "/posts/what-i-thought-was-normal/"
 title: "What I Thought Was Normal"
 date: 2026-06-09
-category: Thoughts
+category: Motherhood
 tags:
   - "family"
   - "Life"
