@@ -142,20 +142,33 @@ permalink: /about/
         font-size: 12px;
       }
 
-      .about-copy {
+          .about-copy {
         font-size: 18px;
-      }
     }
-.about-photo {
-  max-width: 420px;
-  margin: 0 auto 45px;
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-photo {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+.about-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+    align-items: start;
+    margin-top: 35px;
 }
 
 .about-photo img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 4px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
 }
   </style>
 </head>
@@ -171,10 +184,13 @@ permalink: /about/
     <h2>Hi, I’m J.</h2>
     <p class="subhead">The person behind the coffee, cats, and thoughts.</p>
   </section>
-<section class="about-photo">
-  <img src="/images/about-j.jpg" alt="J with her cat">
-</section>
-  <section class="about-copy">
+<section class="about-layout">
+
+  <div class="about-photo">
+    <img src="/images/about-j.jpg" alt="J with her cat">
+  </div>
+
+  <div class="about-copy">
 
     <p>
       I’m a wife, mom of two, cat servant, and freelance writer.
@@ -203,7 +219,7 @@ permalink: /about/
       Thanks for stopping by. I hope you find something here that makes you smile,
       think, remember, or feel a little less alone.
     </p>
-
+ </div>
   </section>
 
 </main>
