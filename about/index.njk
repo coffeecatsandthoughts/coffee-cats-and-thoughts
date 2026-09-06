@@ -146,22 +146,21 @@ permalink: /about/
         font-size: 18px;
     }
 
-    .about-layout {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .about-photo {
-        max-width: 320px;
-        margin: 0 auto;
-    }
 }
 .about-layout {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 50px;
-    align-items: start;
     margin-top: 35px;
+}
+
+.about-photo {
+    float: left;
+    width: 300px;
+    margin: 0 50px 25px 0;
+}
+
+.about-layout::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .about-photo img {
@@ -169,6 +168,15 @@ permalink: /about/
     height: auto;
     display: block;
     border-radius: 4px;
+}
+
+@media (max-width: 650px) {
+    .about-photo {
+        float: none;
+        width: auto;
+        max-width: 320px;
+        margin: 0 auto 30px;
+    }
 }
   </style>
 </head>
