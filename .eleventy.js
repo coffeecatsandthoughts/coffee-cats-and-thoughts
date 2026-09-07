@@ -18,6 +18,15 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
+    eleventyConfig.addFilter("previousPost", function(posts, currentUrl) {
+    const index = posts.findIndex(post => post.url === currentUrl);
+    return index >= 0 && index < posts.length - 1 ? posts[index + 1] : null;
+  });
+
+  eleventyConfig.addFilter("nextPost", function(posts, currentUrl) {
+    const index = posts.findIndex(post => post.url === currentUrl);
+    return index > 0 ? posts[index - 1] : null;
+  });
   return {
     dir: {
       input: ".",
