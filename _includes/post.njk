@@ -51,9 +51,9 @@
     }
 
     main {
-      width: min(760px, calc(100% - 40px));
-      margin: 60px auto;
-    }
+    width: min(1100px, calc(100% - 40px));
+    margin: 60px auto;
+}
 
     .category {
       font-family: Arial, sans-serif;
@@ -157,6 +157,40 @@
       font-family: Arial, sans-serif;
       font-size: 12px;
     }
+.post-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 760px) 260px;
+  gap: 60px;
+  align-items: start;
+}
+
+.recent-posts {
+  border-left: 1px solid #d9cfc2;
+  padding-left: 28px;
+}
+
+.sidebar-label {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #9a6648;
+  margin-bottom: 20px;
+}
+
+.recent-post-link {
+  display: block;
+  color: #332b27;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5ddd3;
+}
+
+.recent-post-link:hover {
+  text-decoration: underline;
+}
 @media (max-width: 650px) {
   .post-navigation {
     grid-template-columns: 1fr;
@@ -167,6 +201,17 @@
     text-align: left;
     align-items: flex-start;
   }
+.post-layout {
+  grid-template-columns: 1fr;
+  gap: 45px;
+}
+
+.recent-posts {
+  border-left: none;
+  border-top: 1px solid #d9cfc2;
+  padding-left: 0;
+  padding-top: 30px;
+}
 }
   </style>
 </head>
@@ -183,6 +228,8 @@
     <div class="date">
       {{ date | readableDate }}
     </div>
+<div class="post-layout">
+  <div class="post-content">
 
     <article>
       {{ content | safe }}
@@ -212,6 +259,20 @@
   </div>
 
 </nav>
+  </div>
+
+  <aside class="recent-posts">
+    <div class="sidebar-label">Recent Posts</div>
+
+   {% for post in collections.blogPosts | recentPosts(page.url) %}
+    
+        <a href="{{ post.url }}" class="recent-post-link">
+          {{ post.data.title }}
+        </a>
+     
+    {% endfor %}
+  </aside>
+</div>
   </main>
 
   {% include "site-footer.njk" %}
