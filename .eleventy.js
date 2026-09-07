@@ -27,6 +27,11 @@ module.exports = function(eleventyConfig) {
     const index = posts.findIndex(post => post.url === currentUrl);
     return index > 0 ? posts[index - 1] : null;
   });
+    eleventyConfig.addFilter("recentPosts", function(posts, currentUrl) {
+    return posts
+      .filter(post => post.url !== currentUrl)
+      .slice(0, 5);
+  });
   return {
     dir: {
       input: ".",
