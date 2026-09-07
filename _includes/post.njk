@@ -146,7 +146,30 @@
       {{ content | safe }}
     </article>
 
-    <a class="back" href="/">← Back to all thoughts</a>
+    {% set previous = collections.blogPosts | previousPost(page.url) %}
+{% set next = collections.blogPosts | nextPost(page.url) %}
+
+<nav class="post-navigation">
+
+  <div class="previous-post">
+    {% if previous %}
+      <span class="post-nav-label">← Previous Post</span>
+      <a href="{{ previous.url }}">
+        {{ previous.data.title }}
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="next-post">
+    {% if next %}
+      <span class="post-nav-label">Next Post →</span>
+      <a href="{{ next.url }}">
+        {{ next.data.title }}
+      </a>
+    {% endif %}
+  </div>
+
+</nav>
   </main>
 
   {% include "site-footer.njk" %}
