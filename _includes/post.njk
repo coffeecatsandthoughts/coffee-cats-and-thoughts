@@ -93,13 +93,34 @@
       margin-top: 2em;
     }
 
-    article img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 35px auto;
-      border-radius: 3px;
-    }
+    article figure {
+    float: left;
+    width: 280px;
+    margin: 10px 35px 25px 0;
+}
+
+article figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 3px;
+}
+
+article figcaption {
+    margin-top: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #927e70;
+    font-style: italic;
+}
+
+article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
     article blockquote {
       margin: 35px 0;
@@ -204,6 +225,13 @@
 .post-layout {
   grid-template-columns: 1fr;
   gap: 45px;
+
+article figure {
+    float: none;
+    width: 100%;
+    max-width: 320px;
+    margin: 30px auto;
+}
 }
 
 .recent-posts {
