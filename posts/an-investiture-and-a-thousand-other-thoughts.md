@@ -37,7 +37,7 @@ Another part of Fr. Potencio's speech stayed with me for a completely different 
 
 > “My response was an immediate yes. Not because I thought the mission would be easy. Certainly it will not be. I said yes because it is what my sense of mission is asking for. It is with my sense of obedience that I said yes.”
 
-Obviously, being president of a college and being president of a PTA aren't remotely on the same scale. Let's establish that before anybody thinks I've suddenly developed delusions of grandeur. 😂 But the words still felt familiar because I remember writing something similar about why I accepted the PTA presidency in the first place.
+Obviously, being president of a college and being president of a PTA aren't remotely on the same scale. Let's establish that before anybody thinks I've suddenly developed delusions of grandeur. But the words still felt familiar because I remember writing something similar about why I accepted the PTA presidency in the first place.
 
 I didn't accept because I had always dreamed of becoming PTA president. Anyone who knows me knows how unlikely that sentence would be. I'm an introvert who works from home, prefers staying behind a screen, and has to budget her social battery like it's a limited resource. I said yes because of my children. They were the reason I was there, and if taking on the role meant I could help, speak when something needed to be said, or contribute something useful to the school community they belonged to, then okay. I would do it.
 
@@ -47,18 +47,18 @@ Now I'm nearing the end of my term, and people have already started telling me I
 
 Maybe we don't always know how long we're supposed to do something. Sometimes you say yes because, at that particular point in your life, it feels like the thing being asked of you. Then when you're asked again, you figure out whether the answer is still yes. I don't know mine yet. If I'm asked and somehow I feel that I'm still supposed to be there, then maybe that's my mission for a little while longer. Who knows? I can only listen and, when the time comes, decide whether I'm being asked to obey.
 
-On a much less profound note, there was also the matter of what I wore. 😂 Working from home has drastically reduced the number of occasions that require me to properly dress up. There was a time, back when I worked in corporate, when getting dressed for work and putting myself together was normal. These days, an outfit that requires actual thought already qualifies as an event.
+On a much less profound note, there was also the matter of what I wore. Working from home has drastically reduced the number of occasions that require me to properly dress up. There was a time, back when I worked in corporate, when getting dressed for work and putting myself together was normal. These days, an outfit that requires actual thought already qualifies as an event.
 
 <figure>
   <img src="/images/investiture-pta-2026.jpg" alt="Attending the investiture at San Sebastian College-Recoletos de Cavite">
-  <figcaption>One of those rare occasions when working from home requires an actual outfit. 😂</figcaption>
+  <figcaption>One of those rare occasions when working from home requires an actual outfit. </figcaption>
 </figure>
 
 So when I do get an occasion to dress up, I try. I think about the clothes, the makeup, the whole thing, because if we're going to leave the house looking respectable, we might as well commit.
 
 Then people who knew my mother saw me and said, “Para kang Mommy mo.”
 
-Finally. 😂
+Finally. 
 
 My mother was a social butterfly in a way I don't think I will ever be. She also knew how to dress and do her makeup, and apparently did it well enough to earn the nickname “Tingting Cojuangco of RTU.” Those are rather large, fashionable shoes to fill, especially for her work-from-home daughter whose daily dress code no longer requires much effort. So yes, being told I looked like her made me ridiculously happy. I'll take that win.
 
