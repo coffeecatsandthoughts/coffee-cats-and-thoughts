@@ -56,7 +56,7 @@ On a much less profound note, there was also the matter of what I wore. Working 
 
 So when I do get an occasion to dress up, I try. I think about the clothes, the makeup, the whole thing, because if we're going to leave the house looking respectable, we might as well commit.
 
-Then people who knew my mother saw me and said, “Para kang Mommy mo.”
+Then people who knew my mother saw me and said, *“Para kang Mommy mo.”*
 
 Finally. 
 
