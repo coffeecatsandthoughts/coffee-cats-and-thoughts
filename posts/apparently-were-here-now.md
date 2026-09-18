@@ -1,6 +1,7 @@
 ---
 layout: post.njk
 title: "Apparently, We're Here Now"
+description: "A mother's reflection on eye rolls, growing independence, and learning how to stay close as her daughter enters the teenage years."
 date: 2026-09-17
 category: Motherhood
 permalink: /posts/apparently-were-here-now/
