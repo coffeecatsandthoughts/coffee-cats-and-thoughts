@@ -16,7 +16,7 @@ Naturally, I've tried remembering what I was like at her age. I know I eventuall
 
 And that's something I deeply and sincerely regret now.
 
-It's one of those regrets that comes with getting older and finally understanding the person on the receiving end. Back then, I probably thought my mother was being annoying, unreasonable, too strict, asking too many questions, or whatever version of *you just don't understand me* I was operating on at the time. Now I'm 44, raising a daughter of my own, and suddenly I'm beginning to understand just how much restraint my mother must have possessed not to yeet me out of the house.
+It's one of those regrets that comes with getting older and finally understanding the person on the receiving end. Back then, I probably thought my mother was being annoying, unreasonable, too strict, asking too many questions, or whatever version of *"you just don't understand me"* I was operating on at the time. Now I'm 44, raising a daughter of my own, and suddenly I'm beginning to understand just how much restraint my mother must have possessed not to yeet me out of the house.
 
 Funny how perspective works.
 
