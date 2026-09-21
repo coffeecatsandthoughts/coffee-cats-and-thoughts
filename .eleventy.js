@@ -11,6 +11,10 @@ module.exports = function(eleventyConfig) {
     }).format(date);
   });
 
+  eleventyConfig.addFilter("dateToISO", function(date) {
+  return new Date(date).toISOString().split("T")[0];
+});
+
   eleventyConfig.addCollection("blogPosts", function(collectionApi) {
     return collectionApi
       .getFilteredByGlob(["./posts/*.md", "./*.md"])
