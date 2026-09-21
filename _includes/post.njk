@@ -32,6 +32,24 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Coffee, Cats, and Thoughts">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | dump | safe }},
+ "datePublished": "{{ date | dateToISO }}",
+  "url": "https://coffeecatsandthoughts.com{{ page.url }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://coffeecatsandthoughts.com{{ page.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Coffee, Cats, and Thoughts"
+  }
+}
+</script>
+
   <style>
     * {
       box-sizing: border-box;
