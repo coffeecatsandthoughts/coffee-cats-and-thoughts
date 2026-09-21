@@ -13,6 +13,16 @@
 {% endif %}
 <link rel="canonical" href="https://coffeecatsandthoughts.com{{ page.url }}">
 
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:site_name" content="Coffee, Cats, and Thoughts">
+<meta property="og:url" content="https://coffeecatsandthoughts.com{{ page.url }}">
+{% if description %}
+<meta property="og:description" content="{{ description }}">
+{% else %}
+<meta property="og:description" content="{{ title }}">
+{% endif %}
+
   <style>
     * {
       box-sizing: border-box;
