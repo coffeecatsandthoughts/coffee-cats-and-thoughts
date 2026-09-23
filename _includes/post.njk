@@ -317,7 +317,7 @@ article figure {
     <article>
       {{ content | safe }}
     </article>
-
+{% include "newsletter-signup.njk" %}
     {% set previous = collections.blogPosts | previousPost(page.url) %}
 {% set next = collections.blogPosts | nextPost(page.url) %}
 
