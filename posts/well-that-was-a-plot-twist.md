@@ -11,7 +11,7 @@ Well, that was a plot twist.
 
 I went into surgery thinking I had a fibroid. Turns out, it wasn't just extra-sized. It was humongous. And because apparently my body enjoys plot twists, it came with an ovarian cyst too.
 
-<img src="/images/surgery-recovery-july-2026.jpg" alt="Recovering after surgery in July 2026" style="max-width: 100%; height: auto; margin: 25px auto; display: block;">
+<img src="/images/surgery-recovery-july-2026.jpg" alt="Recovering after surgery in July 2026" style="max-width: 600px%; height: auto; margin: 25px auto; display: block;">
 
 People have been asking how I'm doing and what recovery feels like. Imagine every movement requiring a committee meeting between your brain, your abdominal muscles, and your pain tolerance.
 
