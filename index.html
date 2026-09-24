@@ -165,7 +165,12 @@
       font-size: 12px;
     }
 
-    @media (max-width: 600px) {
+   @media (max-width: 600px) {
+
+  .home-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
       header {
         padding-top: 50px;
       }
@@ -178,7 +183,69 @@
         display: inline-block;
         margin: 5px 8px;
       }
+.home-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) 300px;
+  gap: 55px;
+  align-items: start;
+}
 
+.home-content {
+  min-width: 0;
+}
+
+.home-sidebar {
+  min-width: 0;
+}
+     .sidebar-about {
+  background: #f1e8dc;
+  padding: 28px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.sidebar-about img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 22px;
+  display: block;
+}
+
+.sidebar-label {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #9a6648;
+  margin-bottom: 10px;
+}
+
+.sidebar-about h2 {
+  font-size: 27px;
+  margin: 0 0 18px;
+}
+
+.sidebar-about p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.sidebar-link {
+  display: inline-block;
+  margin-top: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #9a6648;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  text-decoration: underline;
+}
       main {
         margin-top: 45px;
       }
@@ -192,7 +259,8 @@
    {% include "site-header.njk" %}
 
   <main>
-
+<div class="home-layout">
+  <div class="home-content">
   {% set latest = collections.blogPosts[0] %}
 
 <section class="featured">
@@ -285,7 +353,31 @@
 {% endif %}
 
 </section>
+  </div>
 
+  <aside class="home-sidebar">
+    <div class="sidebar-about">
+  <img src="/images/about-j.jpg" alt="J with one of her cats">
+
+  <div class="sidebar-label">Behind the Thoughts</div>
+
+  <h2>Hi, I'm J.</h2>
+
+  <p>
+    Wife. Mom of two. Writer. Cat servant. Engineer who apparently
+    forgot she was an engineer for a while.
+  </p>
+
+  <p>
+    Mostly just figuring things out, overthinking more than necessary,
+    and writing about it along the way.
+  </p>
+
+  <a href="/about/" class="sidebar-link">More about me →</a>
+</div>
+   
+  </aside>
+</div>
   </main>
 
   {% include "site-footer.njk" %}
