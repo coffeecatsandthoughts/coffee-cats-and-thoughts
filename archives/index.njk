@@ -1,0 +1,147 @@
+---
+permalink: /archives/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include "google-analytics.njk" %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <title>Archives | Coffee, Cats, and Thoughts</title>
+  <meta name="description" content="Browse the Coffee, Cats, and Thoughts archives through the years.">
+  <link rel="canonical" href="https://coffeecatsandthoughts.com/archives/">
+
+  <style>
+    body {
+      margin: 0;
+      background: #f7f2e9;
+      color: #332b27;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 55px 25px 80px;
+    }
+
+    .archive-header {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .archive-header h2 {
+      font-size: 38px;
+      font-weight: normal;
+      margin: 0 0 12px;
+    }
+
+    .archive-header p {
+      font-size: 17px;
+      color: #6f625a;
+      font-style: italic;
+      margin: 0;
+    }
+
+    .archive-year {
+      margin-bottom: 50px;
+    }
+
+    .archive-year h3 {
+      font-size: 28px;
+      font-weight: normal;
+      color: #9a6648;
+      border-bottom: 1px solid #d9cbbb;
+      padding-bottom: 10px;
+      margin-bottom: 8px;
+    }
+
+    .archive-post {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      gap: 20px;
+      padding: 13px 0;
+      border-bottom: 1px solid #e5dbcf;
+      align-items: baseline;
+    }
+
+    .archive-date {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #887b72;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .archive-post a {
+      color: #332b27;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .archive-post a:hover {
+      color: #9a6648;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 40px 20px 60px;
+      }
+
+      .archive-header h2 {
+        font-size: 32px;
+      }
+
+      .archive-post {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+{% include "site-header.njk" %}
+
+<main>
+  <div class="archive-header">
+    <h2>Archives</h2>
+    <p>A little time machine through Coffee, Cats, and Thoughts.</p>
+  </div>
+
+  {% set currentYear = "" %}
+
+  {% for post in collections.blogPosts %}
+    {% set postYear = post.date.getUTCFullYear() %}
+
+    {% if postYear != currentYear %}
+      {% if currentYear != "" %}
+        </div>
+      {% endif %}
+
+      <div class="archive-year">
+        <h3>{{ postYear }}</h3>
+        {% set currentYear = postYear %}
+    {% endif %}
+
+        <div class="archive-post">
+          <span class="archive-date">{{ post.date | readableDate }}</span>
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </div>
+
+  {% endfor %}
+
+  {% if currentYear != "" %}
+    </div>
+  {% endif %}
+
+</main>
+
+{% include "site-footer.njk" %}
+
+</body>
+</html>
