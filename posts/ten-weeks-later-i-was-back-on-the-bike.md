@@ -68,11 +68,6 @@ We also had cheesecake, which arrived a little too early and had softened by the
 
 And somewhere between all that food, we took the obligatory photo proving that yes, I had finally managed to leave the house on a motorbike again.
 
-<figure class="post-photo post-photo-wide">
-  <img src="/images/tree-top-jay-and-j.jpg" alt="Jay and J at Tree Top Cafe after their motorbike ride">
-  <figcaption>Proof of life outside the house.</figcaption>
-</figure>
-
 I think that's really what made the morning special for me. Not because it was some huge post-surgery milestone or because we'd gone somewhere particularly far or fancy. It was just one of those ordinary things I hadn't done since before July 18.
 
 Ten weeks ago, getting out of bed required planning. Sneezing terrified me. Laughing hurt. For weeks, progress meant being able to move a little more normally than I did the week before.
@@ -80,6 +75,11 @@ Ten weeks ago, getting out of bed required planning. Sneezing terrified me. Laug
 Then suddenly, I was sitting behind my husband on a motorbike again, complaining about the heat, getting lost, eating too much, and seeing places I was apparently too scared to photograph. Normal.
 
 It's funny how quickly we stop appreciating normal until something temporarily takes it away. Before surgery, a breakfast ride with Jay was just something we did from time to time. After surgery, apparently I had to annoy him into taking me again because I missed it.
+
+<figure class="post-photo post-photo-wide">
+  <img src="/images/tree-top-jay-and-j.jpg" alt="Jay and J at Tree Top Cafe after their motorbike ride">
+  <figcaption>Proof of life outside the house.</figcaption>
+</figure>
 
 Maybe that's one of the little things recovery has given me: a renewed appreciation for the ordinary things I didn't realize I'd miss.
 
