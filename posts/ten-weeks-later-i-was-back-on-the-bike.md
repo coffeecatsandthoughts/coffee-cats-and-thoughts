@@ -27,7 +27,7 @@ The accidental detour was worth it anyway, even with the heat. We're supposed to
 
 Eventually, we made it to Tree Top Cafe.
 
-<figure class="post-photo post-photo-wide">
+<figure class="wide-photo">
   <img src="/images/tree-top-cafe-indang.jpg" alt="Tree Top Cafe in Indang">
   <figcaption>Tree Top Cafe, finally. After the scenic route we definitely meant to take.</figcaption>
 </figure>
