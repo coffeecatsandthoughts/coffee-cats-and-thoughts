@@ -38,19 +38,16 @@ Their menu, however, apparently refused to choose a nationality. There was birya
 
 We had coffee because obviously. I ordered salted caramel, which was okay, although there was a certain coffee taste I was looking for that I didn't quite get. We also ordered overloaded nachos, and *overloaded* was apparently not being used for marketing purposes only.
 
-<div class="post-photo-pair">
-  <figure>
-    <img src="/images/tree-top-coffee.jpg" alt="Coffee at Tree Top Cafe">
-    <figcaption>Coffee because obviously.</figcaption>
-  </figure>
-
-</div>
+<figure class="photo-left">
+  <img src="/images/tree-top-coffee.jpg" alt="Coffee at Tree Top Cafe">
+  <figcaption>Coffee because obviously.</figcaption>
+</figure>
 
 I was already getting full from the appetizer. Which was unfortunate because we'd also ordered biryani.
 
 Chicken for me, beef for Jay, and the serving that arrived in front of me looked capable of feeding approximately three of me. This may partly be because I don't eat that much in one sitting, but between the nachos and the biryani, breakfast had escalated quickly.
 
-<figure class="post-photo post-photo-wide">
+<figure class="wide-photo">
   <img src="/images/tree-top-breakfast-spread.jpg" alt="Chicken and beef biryani, nachos, and cheesecake at Tree Top Cafe">
   <figcaption>Breakfast had officially escalated.</figcaption>
 </figure>
@@ -67,7 +64,7 @@ Then suddenly, I was sitting behind my husband on a motorbike again, complaining
 
 It's funny how quickly we stop appreciating normal until something temporarily takes it away. Before surgery, a breakfast ride with Jay was just something we did from time to time. After surgery, apparently I had to annoy him into taking me again because I missed it.
 
-<figure class="post-photo post-photo-wide">
+<figure class="photo-right">
   <img src="/images/tree-top-jay-and-j.jpg" alt="Jay and J at Tree Top Cafe after their motorbike ride">
   <figcaption>Proof of life outside the house.</figcaption>
 </figure>
