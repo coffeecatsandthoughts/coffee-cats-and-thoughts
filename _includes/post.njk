@@ -277,6 +277,113 @@ article::after {
 .recent-post-link:hover {
   text-decoration: underline;
 }
+.comments-section {
+    margin-top: 55px;
+    padding-top: 40px;
+    border-top: 1px solid #d9cfc3;
+}
+
+.comments-heading {
+    margin-bottom: 30px;
+}
+
+.comments-label {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #9a6648;
+    margin-bottom: 10px;
+}
+
+.comments-heading h2,
+.reader-comments h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 8px;
+}
+
+.comments-heading p {
+    margin: 0;
+    color: #68584f;
+    font-style: italic;
+}
+
+.comment-field {
+    margin-bottom: 20px;
+}
+
+.comment-field label {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #68584f;
+    margin-bottom: 7px;
+}
+
+.comment-field label span {
+    color: #927e70;
+    font-size: 11px;
+}
+
+.comment-field input,
+.comment-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d9cfc3;
+    border-radius: 3px;
+    background: #fffdf9;
+    color: #332b27;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+}
+
+.comment-field textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.comment-field input:focus,
+.comment-field textarea:focus {
+    outline: none;
+    border-color: #9a6648;
+}
+
+.comment-submit {
+    border: 0;
+    border-radius: 3px;
+    background: #9a6648;
+    color: #fff;
+    padding: 12px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.comment-submit:hover {
+    opacity: 0.88;
+}
+
+.comment-message {
+    margin-top: 15px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.reader-comments {
+    margin-top: 45px;
+}
+
+.reader-comments h2 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5dbd3;
+}
+
+.comments-loading {
+    color: #927e70;
+    font-style: italic;
+    font-size: 14px;
+}
 @media (max-width: 650px) {
   .post-navigation {
     grid-template-columns: 1fr;
@@ -327,6 +434,43 @@ article figure {
     <article>
       {{ content | safe }}
     </article>
+<section class="comments-section" data-post="{{ page.url }}">
+  <div class="comments-heading">
+    <div class="comments-label">Join the Conversation</div>
+    <h2>Leave a Thought</h2>
+    <p>Have something to say? I'd love to hear it.</p>
+  </div>
+
+  <form id="comment-form">
+    <div class="comment-field">
+      <label for="comment-name">Name</label>
+      <input type="text" id="comment-name" name="name" maxlength="80" required>
+    </div>
+
+    <div class="comment-field">
+      <label for="comment-email">
+        Email <span>(won't be published)</span>
+      </label>
+      <input type="email" id="comment-email" name="email" maxlength="200">
+    </div>
+
+    <div class="comment-field">
+      <label for="comment-text">Your thought</label>
+      <textarea id="comment-text" name="comment" rows="6" maxlength="3000" required></textarea>
+    </div>
+
+    <button type="submit" class="comment-submit">Leave my thought →</button>
+
+    <p id="comment-message" class="comment-message"></p>
+  </form>
+
+  <div class="reader-comments">
+    <h2>Thoughts from Readers</h2>
+    <div id="comments-list">
+      <p class="comments-loading">Loading thoughts...</p>
+    </div>
+  </div>
+</section>
 {% include "newsletter-signup.njk" %}
     {% set previous = collections.blogPosts | previousPost(page.url) %}
 {% set next = collections.blogPosts | nextPost(page.url) %}
@@ -369,6 +513,114 @@ article figure {
   </main>
 
   {% include "site-footer.njk" %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".comments-section");
+  const form = document.getElementById("comment-form");
+  const commentsList = document.getElementById("comments-list");
+  const message = document.getElementById("comment-message");
+
+  if (!section || !form || !commentsList) return;
+
+  const post = section.dataset.post;
+
+  async function loadComments() {
+    try {
+      const response = await fetch(
+        "/api/comments?post=" + encodeURIComponent(post)
+      );
+
+      const data = await response.json();
+      const comments = data.comments || [];
+
+      if (comments.length === 0) {
+        commentsList.innerHTML =
+          '<p class="comments-loading">No thoughts yet. Be the first to leave one.</p>';
+        return;
+      }
+
+      commentsList.innerHTML = "";
+
+      comments.forEach(function (item) {
+        const comment = document.createElement("div");
+        comment.className = "reader-comment";
+
+        const name = document.createElement("strong");
+        name.textContent = item.name;
+
+        const date = document.createElement("span");
+        date.className = "reader-comment-date";
+
+        const parsedDate = new Date(item.created_at + "Z");
+        date.textContent = parsedDate.toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric"
+        });
+
+        const text = document.createElement("p");
+        text.textContent = item.comment;
+
+        comment.appendChild(name);
+        comment.appendChild(date);
+        comment.appendChild(text);
+
+        commentsList.appendChild(comment);
+      });
+    } catch (error) {
+      commentsList.innerHTML =
+        '<p class="comments-loading">Comments couldn’t be loaded right now.</p>';
+    }
+  }
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const button = form.querySelector(".comment-submit");
+
+    const payload = {
+      post: post,
+      name: document.getElementById("comment-name").value.trim(),
+      email: document.getElementById("comment-email").value.trim(),
+      comment: document.getElementById("comment-text").value.trim()
+    };
+
+    button.disabled = true;
+    button.textContent = "Sending...";
+    message.textContent = "";
+
+    try {
+      const response = await fetch("/api/comments", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Something went wrong.");
+      }
+
+      message.textContent =
+        data.message || "Thanks! Your comment is waiting for approval.";
+
+      form.reset();
+    } catch (error) {
+      message.textContent =
+        error.message || "Something went wrong. Please try again.";
+    } finally {
+      button.disabled = false;
+      button.textContent = "Leave my thought →";
+    }
+  });
+
+  loadComments();
+});
+</script>
 
 </body>
 </html>
