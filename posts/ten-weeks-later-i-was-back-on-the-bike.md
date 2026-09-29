@@ -15,7 +15,7 @@ My Googling kept turning up the usual six-to-eight-week territory, and since I'd
 
 Poor Jay eventually gave in.
 
-Last weekend, we went on a breakfast ride to Indang, with Tree Top Cafe as our destination. And just to make something very clear: when I say *ride*, I don't mean I was operating the motorbike. I was the back ride. My responsibilities consisted mostly of sitting there, enjoying the scenery, and holding on to my husband as though letting go would result in my immediate departure from the motorcycle.
+Yesterday, we went on a breakfast ride to Indang, with Tree Top Cafe as our destination. And just to make something very clear: when I say *ride*, I don't mean I was operating the motorbike. I was the back ride. My responsibilities consisted mostly of sitting there, enjoying the scenery, and holding on to my husband as though letting go would result in my immediate departure from the motorcycle.
 
 I'm not exactly a fearless back rider. I see people sitting behind motorcycles casually taking videos, checking their phones, and doing whatever else people apparently do when they aren't concerned about falling off a moving vehicle. I can't relate. Most of the time, at least one of my hands needs to be attached to Jay for my own peace of mind.
 
@@ -44,10 +44,6 @@ We had coffee because obviously. I ordered salted caramel, which was okay, altho
     <figcaption>Coffee because obviously.</figcaption>
   </figure>
 
-  <figure>
-    <img src="/images/tree-top-overloaded-nachos.jpg" alt="Overloaded nachos at Tree Top Cafe">
-    <figcaption>They were not kidding about the overloaded part.</figcaption>
-  </figure>
 </div>
 
 I was already getting full from the appetizer. Which was unfortunate because we'd also ordered biryani.
