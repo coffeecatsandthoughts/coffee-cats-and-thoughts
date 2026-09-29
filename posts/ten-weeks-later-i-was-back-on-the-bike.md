@@ -1,7 +1,7 @@
 ---
 layout: post.njk
 title: "Ten Weeks Later, I Was Back on the Bike"
-date: 2026-09-27
+date: 2026-09-28
 category: Life
 permalink: /posts/ten-weeks-later-i-was-back-on-the-bike/
 description: "Ten weeks after major surgery, I finally talked my husband into taking me on a motorbike breakfast ride again. There was heat, a wrong turn, too much food, and a new appreciation for ordinary things."
