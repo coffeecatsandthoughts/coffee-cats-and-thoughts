@@ -379,6 +379,28 @@ article::after {
     border-bottom: 1px solid #e5dbd3;
 }
 
+.reader-comment {
+    padding: 18px 0;
+    border-bottom: 1px solid #e5dbd3;
+}
+
+.reader-comment strong {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.reader-comment-date {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #927e70;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.reader-comment p {
+    margin: 10px 0 0;
+}
+
 .comments-loading {
     color: #927e70;
     font-style: italic;
@@ -552,12 +574,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const date = document.createElement("span");
         date.className = "reader-comment-date";
 
-        const parsedDate = new Date(item.created_at + "Z");
-        date.textContent = parsedDate.toLocaleDateString("en-US", {
-          month: "long",
-          day: "numeric",
-          year: "numeric"
-        });
+        const parsedDate = new Date(item.created_at.replace(" ", "T") + "Z");
+
+date.textContent = parsedDate.toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "Asia/Manila"
+});
 
         const text = document.createElement("p");
         text.textContent = item.comment;
