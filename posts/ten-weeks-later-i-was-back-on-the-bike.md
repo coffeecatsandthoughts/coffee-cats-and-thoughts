@@ -61,11 +61,6 @@ Chicken for me, beef for Jay, and the serving that arrived in front of me looked
 
 We also had cheesecake, which arrived a little too early and had softened by the time we were actually ready to eat it. Still cheesecake, though. We weren't going to waste it over a minor structural problem.
 
-<figure class="post-photo post-photo-medium">
-  <img src="/images/tree-top-cheesecake.jpg" alt="Cheesecake with chocolate drizzle at Tree Top Cafe">
-  <figcaption>A minor structural problem. Still cheesecake.</figcaption>
-</figure>
-
 And somewhere between all that food, we took the obligatory photo proving that yes, I had finally managed to leave the house on a motorbike again.
 
 I think that's really what made the morning special for me. Not because it was some huge post-surgery milestone or because we'd gone somewhere particularly far or fancy. It was just one of those ordinary things I hadn't done since before July 18.
