@@ -28,7 +28,7 @@ I'm not what anyone would call an arts-and-crafts mom. I have ideas. Whether my 
 
 Koko helped decide what he wanted on the cart. Since it was for *Buwan ng Wika*, we wanted it colorful and unmistakably Filipino. We used what we had, cut up an old cardboard box, and slowly turned something that once held an appliance into something that vaguely resembled a sorbetes cart.
 
-<figure class="post-photo post-photo-wide">
+<figure class="post-photo wide-photo">
   <img src="/images/buwan-ng-wika-cardboard-cart.jpg" alt="The assembled cardboard sorbetes cart before painting and decorating">
   <figcaption>Technically a cart. Artistically... still under development.</figcaption>
 </figure>
