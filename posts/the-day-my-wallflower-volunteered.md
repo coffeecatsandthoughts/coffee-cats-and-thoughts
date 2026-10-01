@@ -30,7 +30,7 @@ Koko helped decide what he wanted on the cart. Since it was for *Buwan ng Wika*,
 
 <div style="clear: both;"></div>
 
-<figure class="post-photo wide-photo">
+<figure class="post-photo cart-progress-photo">
   <img src="/images/buwan-ng-wika-cardboard-cart.jpg" alt="The assembled cardboard sorbetes cart before painting and decorating">
   <figcaption>Technically a cart. Artistically... still under development.</figcaption>
 </figure>
