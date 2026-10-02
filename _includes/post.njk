@@ -194,6 +194,20 @@ article figure.wide-photo img {
     border: 0;
     border-radius: 3px;
 }
+.pet-memorial {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 45px 0 18px;
+}
+
+.pet-memorial img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    border-radius: 3px;
+}
 article::after {
     content: "";
     display: block;
@@ -425,6 +439,11 @@ article::after {
     gap: 25px;
   }
 
+.pet-memorial {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 35px 0 16px;
+}
   .next-post {
     text-align: left;
     align-items: flex-start;
