@@ -26,7 +26,7 @@ At one point, he told me there was no signal at Kaybiang and sent me a photo. Ev
 
 His phone battery. Very reassuring. Thank you, anak.
 
-<figure class="wide-photo">
+<figure class="photo-right">
   <img src="/images/koko-48km-bike-ride-messages.jpg" alt="Messenger conversation with Koko during his 48-kilometer bike ride">
   <figcaption>Exhibit A: me being extremely normal about the whole thing.</figcaption>
 </figure>
