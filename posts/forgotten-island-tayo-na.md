@@ -11,7 +11,7 @@ description: "A Filipino take on Forgotten Island, from folklore and representat
 
 I went into *Forgotten Island* expecting a cute animated movie about being Filipino, with maybe a little American dream thrown in. I came out feeling like I'd been put through an emotional obstacle course.
 
-Sad over *Lola*. Happy watching Jo and Raissa go on their adventure. Sad again over the thought of them separating. Then suddenly I'm scared of *Manang* and *Batiba* while simultaneously wanting to take the little duwendes home because WHY ARE THEY SO CUTE?
+Sad over *Lola*. Happy watching Jo and Raissa go on their adventure. Sad again over the thought of them separating. Then suddenly I'm scared of *Manang* and *Batiba* while simultaneously wanting to take the little *duwendes* home because WHY ARE THEY SO CUTE?
 
 Pick an emotion, movie.
 
@@ -50,7 +50,7 @@ Filipinos aren't exactly a tiny, obscure community in the United States. Around 
 
 *Coco* gave us a story deeply rooted in Mexican culture. *Moana* drew from Polynesian cultures. *Mulan* brought a Chinese legend to generations of children. *Turning Red* centered a Chinese-Canadian family. Even *Brave* gave us Scotland, wild red hair, and an accent my children probably understood better than I did.
 
-And now here's a major animated movie where a Lola tells stories about creatures we know. That meant something to me.
+And now here's a major animated movie where a *Lola* tells stories about creatures we know. That meant something to me.
 
 It doesn't mean everybody has to love the movie because it's Filipino. Representation doesn't make a movie immune from criticism, and *Forgotten Island* isn't perfect. If the accents bothered you, they bothered you. If the story didn't work for you, it didn't work for you. Movies land differently depending on who's sitting in the theater.
 
@@ -60,7 +60,7 @@ Besides, I was too busy being transported somewhere else entirely.
 
 The movie is set in the 1990s, and maybe that's another reason it got me. Jo and Raissa's childhood friendship reminded me of relationships before smartphones, group chats, location sharing, and the ability to know what somebody was doing every five minutes.
 
-We went outside. We showed up at people's houses. We made plans that required everyone to actually remember the plan. We disappeared for hours and somehow our parents survived without Find My Friends.
+We went outside. We showed up at people's houses. We made plans that required everyone to actually remember the plan. We disappeared for hours and somehow our parents survived without Life360.
 
 How did any of us make it to adulthood?
 
