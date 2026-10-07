@@ -19,7 +19,23 @@ export async function onRequestGet(context) {
     .bind(post)
     .all();
 
-  return Response.json({ comments: results });
+  const { results: replies } = await context.env.COMMENTS_DB
+  .prepare(`
+    SELECT r.comment_id, r.reply, r.created_at
+    FROM comment_replies r
+    JOIN comments c ON c.id = r.comment_id
+    WHERE c.post_slug = ? AND c.approved = 1
+    ORDER BY r.created_at ASC
+  `)
+  .bind(post)
+  .all();
+
+  return Response.json({
+  comments: results.map(comment => ({
+    ...comment,
+    replies: replies.filter(reply => reply.comment_id === comment.id)
+  }))
+});
 }
 
 export async function onRequestPost(context) {
