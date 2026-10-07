@@ -1,0 +1,130 @@
+
+---
+permalink: /bookshelf/index.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Bookshelf | Coffee, Cats, and Thoughts</title>
+  <meta name="description" content="A little corner for books I've finished, rated, and added to my personal bookshelf.">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #f7f2e9;
+      color: #332b27;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    .bookshelf-container {
+      max-width: 1000px;
+      margin: 55px auto 80px;
+      padding: 0 25px;
+    }
+
+    .bookshelf-heading {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .bookshelf-heading h2 {
+      font-size: 38px;
+      font-weight: normal;
+      margin: 0 0 10px;
+    }
+
+    .bookshelf-heading p {
+      color: #68584f;
+      font-style: italic;
+      margin: 0;
+    }
+
+    .book-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 35px;
+    }
+
+    .book-card img {
+      width: 100%;
+      max-width: 190px;
+      aspect-ratio: 2 / 3;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .book-title {
+      font-size: 19px;
+      line-height: 1.4;
+      margin: 0 0 5px;
+    }
+
+    .book-author {
+      font-size: 14px;
+      color: #68584f;
+      margin: 0 0 8px;
+    }
+
+    .book-rating {
+      color: #9a6648;
+      font-size: 23px;
+      letter-spacing: 2px;
+      line-height: 1.3;
+    }
+
+    .book-score {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #927e70;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 700px) {
+      .bookshelf-container { margin-top: 35px; }
+      .bookshelf-heading h2 { font-size: 30px; }
+      .book-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; }
+      .book-title { font-size: 16px; }
+      .book-rating { font-size: 20px; }
+    }
+
+    @media (max-width: 400px) {
+      .book-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  {% include "google-analytics.njk" %}
+</head>
+<body>
+
+  {% include "site-header.njk" %}
+
+  <main class="bookshelf-container">
+    <div class="bookshelf-heading">
+      <h2>The Bookshelf</h2>
+      <p>Books I've finished. Some I loved, some I survived. All rated accordingly.</p>
+    </div>
+
+    <div class="book-grid">
+
+      <div class="book-card">
+        <img src="/images/currently-reading-confessions.jpg" alt="Confessions of a Forty-Something F##k Up book cover">
+        <h3 class="book-title">Confessions of a Forty-Something F##k Up</h3>
+        <p class="book-author">Alexandra Potter</p>
+        <div class="book-rating" aria-label="4 out of 5 stars">★★★★☆</div>
+        <div class="book-score">4 / 5</div>
+      </div>
+
+    </div>
+  </main>
+
+  {% include "site-footer.njk" %}
+
+</body>
+</html>
