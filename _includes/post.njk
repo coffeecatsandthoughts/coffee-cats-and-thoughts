@@ -622,6 +622,28 @@ date.textContent = parsedDate.toLocaleDateString("en-US", {
         comment.appendChild(date);
         comment.appendChild(text);
 
+if (item.replies && item.replies.length > 0) {
+  item.replies.forEach(function (reply) {
+    const replyBox = document.createElement("div");
+
+    replyBox.style.margin = "15px 0 5px 20px";
+    replyBox.style.padding = "12px 15px";
+    replyBox.style.borderLeft = "3px solid #9a6648";
+    replyBox.style.background = "#f7f2e9";
+
+    const replyAuthor = document.createElement("strong");
+    replyAuthor.textContent = "J. · Author";
+
+    const replyText = document.createElement("p");
+    replyText.textContent = reply.reply;
+    replyText.style.margin = "8px 0 0";
+
+    replyBox.appendChild(replyAuthor);
+    replyBox.appendChild(replyText);
+    comment.appendChild(replyBox);
+  });
+}
+
         commentsList.appendChild(comment);
       });
     } catch (error) {
