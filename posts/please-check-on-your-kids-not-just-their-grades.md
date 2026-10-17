@@ -16,7 +16,7 @@ Some of her belongings went missing at school and were eventually found inside a
   <figcaption>Photo shared by the person who discovered the missing belongings and reported the incident to the school principal.</figcaption>
 </figure>
 
-I don't know who did it, and I'm not going to start pointing fingers without knowing the facts. But unless school supplies have suddenly developed legs and an interest in visiting restrooms, I think it's fair to say there are questions worth asking.
+I don't know who did it, and I'm not going to start pointing fingers without knowing the facts. But unless purses, wallets, and *kikay* kits have suddenly developed legs and an interest in visiting restrooms, I think it's fair to say there are questions worth asking.
 
 When I raised the concern, it wasn't simply because my daughter was involved. It was because four incidents in one week sounded a little too frequent to keep treating as isolated cases. The things my daughter and her classmates lost can be replaced. They're just things. What bothers me more is the possibility that someone is getting increasingly comfortable doing things like this because nobody has managed to put a stop to it.
 
@@ -26,7 +26,7 @@ Then there are the other things I've been hearing about. Students being unnecess
 
 Which is interesting, because we parents tend to know our children as they are around us. We know the affectionate, helpful, sometimes irritating little humans we live with. But the version their classmates see? That's a whole other audience, and we're not always invited to the show.
 
-Now, I know children have always gotten into trouble. We did, too. I'm 44, not 144, and I'm certainly not going to pretend my generation spent its childhood quietly reading books and asking permission before every questionable decision. We had our moments. Plenty of them.
+Now, I know children have always gotten into trouble. We did, too. I'm 44, not 144, and I'm certainly not going to pretend my generation was made up of perfectly behaved little angels who always listened to their parents, respected every rule, and never tested a teacher's patience. We had our moments. Plenty of them.
 
 But I also don't think *“Bata pa naman, ganyan talaga”* should become the automatic response whenever a child does something that hurts or disrespects another person. Yes, they're kids. That's exactly why we're supposed to be teaching them these things now, while they're still figuring out how to behave around other people.
 
