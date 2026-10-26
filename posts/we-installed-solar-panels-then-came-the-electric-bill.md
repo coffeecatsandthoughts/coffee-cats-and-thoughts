@@ -31,7 +31,7 @@ We had the system running by late August, but our Meralco meter is read every 13
 
 Well, now I know. Before solar, our electricity bill usually hovered around ₱6,000 to ₱7,000 a month, sometimes higher during summer. And that was with us being careful. We had air conditioners, but using them always came with a little mental computation. Was it hot enough to justify turning one on? How many hours had it been running? Could we survive with electric fans instead?
 
-<div class="solar-bill-comparison" style="display: flex; gap: 15px; align-items: flex-start; margin: 30px 0;">
+<div class="solar-bill-comparison" style="display: flex; flex-wrap: wrap; gap: 15px; align-items: flex-start; margin: 30px 0;">
 
   <figure style="flex: 1; min-width: 0; margin: 0;">
     <img src="/images/meralco-bill-before-solar.jpg" alt="August Meralco bill before solar installation, showing ₱6,378.89" style="width: 100%; height: auto;">
