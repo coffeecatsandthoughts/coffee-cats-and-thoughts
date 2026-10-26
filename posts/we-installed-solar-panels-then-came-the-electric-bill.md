@@ -7,8 +7,6 @@ permalink: /posts/we-installed-solar-panels-then-came-the-electric-bill/
 description: "We installed solar panels, started using more electricity, and waited for our first full Meralco bill. Nothing prepared me for ₱187.57."
 ---
 
-We Installed Solar Panels. Then Came the Electric Bill
-
 I have never been this excited about receiving an electricity bill. Usually, it's one of those things I'd rather not look at until I absolutely have to. But this month? I was actually waiting for Meralco to tell me how much we owed them.
 
 And when the bill finally arrived, I had to look at the amount more than once.
