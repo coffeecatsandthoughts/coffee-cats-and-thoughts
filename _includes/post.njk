@@ -477,6 +477,56 @@ article figure {
     width: 100%;
   }
 }
+
+/* Blog post sharing buttons */
+.post-share {
+  margin: 35px 0;
+  padding: 22px 0;
+  border-top: 1px solid #ddd4c8;
+  border-bottom: 1px solid #ddd4c8;
+  text-align: center;
+}
+
+.post-share-label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.post-share-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.post-share-buttons a,
+.post-share-buttons button {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid #bca995;
+  border-radius: 20px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.post-share-buttons a:hover,
+.post-share-buttons button:hover {
+  background: #e8ded1;
+}
+
+.post-share-buttons a:focus-visible,
+.post-share-buttons button:focus-visible {
+  outline: 2px solid #795c46;
+  outline-offset: 3px;
+}
+
   </style>
 </head>
 
@@ -498,6 +548,29 @@ article figure {
     <article>
       {{ content | safe }}
     </article>
+
+<div class="post-share" aria-label="Share this post">
+  <span class="post-share-label">Enjoyed this post? Share it!</span>
+
+  <div class="post-share-buttons">
+    <a id="share-facebook" href="#" target="_blank" rel="noopener noreferrer">
+      Facebook
+    </a>
+
+    <a id="share-x" href="#" target="_blank" rel="noopener noreferrer">
+      X
+    </a>
+
+    <button type="button" id="share-copy">
+      Copy Link
+    </button>
+
+    <button type="button" id="share-native" style="display:none;">
+      More Options
+    </button>
+  </div>
+</div>
+
 <section class="comments-section" data-post="{{ page.url }}">
   <div class="comments-heading">
     <div class="comments-label">Join the Conversation</div>
@@ -707,6 +780,62 @@ if (item.replies && item.replies.length > 0) {
   });
 
   loadComments();
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const postUrl = window.location.href.split("#")[0];
+  const postTitle = document.title;
+
+  const facebook = document.getElementById("share-facebook");
+  const x = document.getElementById("share-x");
+  const copy = document.getElementById("share-copy");
+  const native = document.getElementById("share-native");
+
+  if (facebook) {
+    facebook.href =
+      "https://www.facebook.com/sharer/sharer.php?u=" +
+      encodeURIComponent(postUrl);
+  }
+
+  if (x) {
+    x.href =
+      "https://twitter.com/intent/tweet?text=" +
+      encodeURIComponent(postTitle) +
+      "&url=" +
+      encodeURIComponent(postUrl);
+  }
+
+  if (copy) {
+    copy.addEventListener("click", async function () {
+      try {
+        await navigator.clipboard.writeText(postUrl);
+        copy.textContent = "Copied! ✓";
+
+        setTimeout(function () {
+          copy.textContent = "Copy Link";
+        }, 2000);
+      } catch (error) {
+        copy.textContent = "Unable to copy";
+      }
+    });
+  }
+
+  if (native && navigator.share) {
+    native.style.display = "inline-block";
+
+    native.addEventListener("click", async function () {
+      try {
+        await navigator.share({
+          title: postTitle,
+          url: postUrl
+        });
+      } catch (error) {
+        // User cancelled sharing.
+      }
+    });
+  }
 });
 </script>
 
