@@ -57,4 +57,4 @@ This morning's news reminded me of a family who welcomed ours into a neighborhoo
 
 Today, I find myself remembering the people who made that house a home, and realizing how many of them are no longer here. We spend so much of our younger years looking forward to growing up that we sometimes forget what growing up also means.
 
-**Our parents are growing older, too. And unlike the childhood we keep revisiting in our memories, the time we still have with them isn't something we can go back to once it's gone.**
+Our parents are growing older, too. And unlike the childhood we keep revisiting in our memories, the time we still have with them isn't something we can go back to once it's gone.
