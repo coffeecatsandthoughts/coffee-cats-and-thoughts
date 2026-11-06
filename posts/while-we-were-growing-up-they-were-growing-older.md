@@ -15,7 +15,7 @@ Before we officially moved into our house in 1993, we would occasionally visit t
 
 Our mothers were both career women, so they didn't always have the luxury of sitting around and catching up. But during holidays, they would exchange food, and whenever our families crossed paths, there would always be a familiar greeting or a quick conversation.
 
-As for us kids, we had our own little world. G, especially, became very close to us. We spent years growing up in the same neighborhood, sharing the kind of childhood that comes with having friends just a few houses away. Of course, there were occasional misunderstandings and conflicts, too. That's practically included in the package when you have neighbors, isn't it? 😂
+As for us kids, we had our own little world. G, especially, became very close to us. We spent years growing up in the same neighborhood, sharing the kind of childhood that comes with having friends just a few houses away. Of course, there were occasional misunderstandings and conflicts, too. That's practically included in the package when you have neighbors, isn't it? 
 
 But that's the thing about growing up in a neighborhood where everyone knows everyone. You don't just remember the people. You remember the houses, the streets, the holidays, the familiar faces at church, and the little routines that somehow become part of your childhood.
 
